@@ -1,0 +1,298 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+/* start box-model */
+.d-block {
+  display: block;
+}
+@media (max-width:767.98px) {
+  .d-block-mobile {
+    display: block;
+  }
+}
+@media (max-width:767.98px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenley {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.f-dir {
+  flex-direction: column;
+}
+@media (max-width: 767.98px) {
+  .f-dir-mobile {
+    flex-direction: column;
+  }
+}
+.gap-20 {
+  gap: 20px;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .f-dir-mobile {
+    flex-direction: column;
+  }
+}
+.d-grid {
+  display: grid;
+}
+/* End box-model */
+/* start position */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+/* End position */
+/* start margin + padding */
+.m-15 {
+  margin: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-13 {
+  margin-bottom: 13px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+/* End margin + padding */
+/* Start color */
+.bg-eee {
+  background-color: #eee;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.bg-blue-alt {
+  background-color: var(--blue-alt-color);
+}
+.bg-gree {
+  background-color: var(--green-color);
+}
+.bg-grey {
+  background-color: var(--grey-color);
+}
+.c-black {
+  color: black;
+}
+.c-white {
+  color: white;
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-blue-alt {
+  color: var(--blue-alt-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-red {
+  color: var(--red-color);
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.op-0 {
+  opacity: 0.3;
+}
+/* End color */
+/* start font */
+.letter-sp {
+  letter-spacing: -1px;
+}
+.txt-c {
+  text-align: center;
+}
+@media (max-width:767.98px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.f-w {
+  font-weight: bold;
+}
+.txt-line {
+  text-decoration: line-through;
+}
+/* End font */
+/* Start Border */
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.rad-half {
+  border-radius: 50%;
+}
+.b-none {
+  border: none;
+}
+/* End Border */
+/* start width + height */
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-full {
+  height: 100%;
+}
+/* End width */
+/* Start compones */
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.head-p {
+  margin: 5px 0 20px;
+  color: #888;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sytm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+  margin: 0 20px 20px;
+}
+/* End compones  */
