@@ -92,6 +92,7 @@ label {
 .boxs-file,
 .short-file,
 .box-Free {
+  transition: 0.5s;
   background-color: var(--white);
 }
 .dark .btn-shape {
@@ -105,11 +106,13 @@ li:last-child {
 /* End Gloable varible */
 /* Start Page */
 .page {
+  transition: 0.5s;
   background-color: var(--color-page);
 }
 /* End Page */
 /* Start Sidebar */
 .Sidebar {
+  transition: 0.5s;
   width: 250px;
   box-shadow: 0 0 10px #DDD;
   background-color: var(--white);
@@ -178,6 +181,7 @@ li:last-child {
   overflow: hidden;
 }
 .section .head {
+  transition: 0.5s;
   justify-content: space-between;
   background-color: var(--white);
 }
@@ -222,7 +226,7 @@ li:last-child {
 .section .icons .moon {
   color: var(--black);
   display: block;
-  margin-right: 0.9rem;
+  margin: 0 0.9rem;
   font-size: 1.4rem;
   cursor: pointer;
 }
