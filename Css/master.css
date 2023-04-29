@@ -6,7 +6,19 @@
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
+  --color-page: #F1F5F9;
+  --black: black;
+  --white: white;
+  --rmady: #757575;
 }
+.dark {
+  --black: white;
+  --color-page: #212529;
+  --grey-color: white;
+  --white: black;
+  --rmady: white;
+  --bac-eee: #eee;
+} 
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,19 +49,74 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--blue-alt-color);
 }
+h2 {
+  color: var(--black);
+}
+span{
+  color: var(--black);
+}
+label {
+  color: var(--black);
+}
+.body {
+  background-color: var(--white);
+}
+.box {
+  background-color: var(--white);
+}
+.Quick-Draft,
+.Targets,
+.Tickets,
+.latest,
+.Tasks,
+.Items,
+.Uploads,
+.Progress,
+.Reminders,
+.Latest,
+.Social,
+.table,
+.latest-news,
+.Site,
+.General,
+.Security,
+.Social-Info,
+.Widgets,
+.Backup,
+.overView,
+.Skills,
+.Activities,
+.boxs-project,
+.boxs-Courses,
+.boxs-frind,
+.boxs-file,
+.short-file,
+.box-Free {
+  background-color: var(--white);
+}
+.dark .btn-shape {
+  color: var(--white);
+}
+.done,
+.currnt,
+li:last-child {
+  color: var(--black);
+}
 /* End Gloable varible */
 /* Start Page */
 .page {
-  background-color: #F1F5F9;
+  background-color: var(--color-page);
 }
 /* End Page */
 /* Start Sidebar */
 .Sidebar {
   width: 250px;
   box-shadow: 0 0 10px #DDD;
+  background-color: var(--white);
 }
 .Sidebar > h3 {
   position: relative;
+  color: var(--black);
 }
 .page .Sidebar h3::before {
   content: '';
@@ -58,7 +125,7 @@ ul {
   left: 50%;
   width: 95px;
   height: 2px;
-  background-color: black;
+  background-color: var(--black);
   transform: translateX(-50%);
 }
 .page .Sidebar h3::after {
@@ -70,13 +137,18 @@ ul {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--black);
   border: 4px solid white;
 }
 .page .Sidebar ul li a.active {
   background-color: #f6f6f6;
 }
+.dark .page .Sidebar ul li a.active,
+.dark .page .Sidebar ul li a:hover{
+  background-color: var(--color-page);
+}
 .page .Sidebar ul li a {
+  color: var(--black);
   transition: 0.3s;
   margin-bottom: 5px;
 }
@@ -107,6 +179,10 @@ ul {
 }
 .section .head {
   justify-content: space-between;
+  background-color: var(--white);
+}
+.welo h2 {
+  color: var(--black);
 }
 .section .search {
   display: flex;
@@ -132,7 +208,7 @@ ul {
   transition: 0.3s;
 }
 .section .search i {
-  color: #757575;
+  color: var(--rmady);
 }
 .section img{
   width: 32px;
@@ -143,7 +219,14 @@ ul {
   display: flex;
   align-items: center;
 }
-.section .icons span::before {
+.section .icons .moon {
+  color: var(--black);
+  display: block;
+  margin-right: 0.9rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.section .icons .bell::before {
   content: '';
   position: absolute;
   top: -5px;
@@ -156,6 +239,7 @@ ul {
 /* End Head section */
 /* Start body-section */
 .body-section h1 {
+  color: var(--black);
   margin: 20px 20px 40px;
 }
 .body-section h1::before {
@@ -223,6 +307,7 @@ ul {
   }
 }
 .body-section .count-boxs .box .body .count p {
+  color: var(--black);
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -248,6 +333,7 @@ ul {
   opacity: 0;
   transition: 0.3s;
 }
+
 .Quick-Draft .Save {
   cursor: pointer;
   margin: 0 15px 0 auto;
@@ -365,6 +451,7 @@ ul {
   flex: 1;
 }
 .Tasks .body .box i {
+  color: var(--black);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -445,6 +532,7 @@ ul {
   margin: 0 15px 0 0;
 }
 .Latest .body-lat {
+  color: var(--black);
   text-transform: capitalize;
   line-height: 1.8;
   border-top: 1px solid #eee;
@@ -494,8 +582,11 @@ table {
   border-spacing: 0px;
 }
 table thead {
-  background-color: #eee;
+  background-color: var(--bac-eee);
   font-weight: bold;
+}
+table tbody {
+  background-color: var(--bac-eee);
 }
 table td {
   padding: 15px;
@@ -812,6 +903,9 @@ border-color: var(--blue-alt-color);
 .our-rate .Information:hover {
   background-color: #f9f9f9;
 }
+.dark .our-rate .Information:hover {
+  background-color: var(--color-page);
+}
 .our-rate .Information h4 {
   font-weight: normal;
 }
@@ -861,6 +955,9 @@ border-color: var(--blue-alt-color);
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 14px;
+}
+.dark .bottomView .Skills ul li span {
+  color: black;
 }
 /* End Skills */
 /* Start Activities */
